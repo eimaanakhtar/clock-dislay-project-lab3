@@ -2,10 +2,10 @@
 dependency1.from=ClockDisplay
 dependency1.to=NumberDisplay
 dependency1.type=UsesDependency
-editor.fx.0.height=0
-editor.fx.0.width=0
-editor.fx.0.x=0
-editor.fx.0.y=0
+editor.fx.0.height=728
+editor.fx.0.width=800
+editor.fx.0.x=19
+editor.fx.0.y=54
 objectbench.height=100
 objectbench.width=433
 package.divider.horizontal=0.6094182825484764
