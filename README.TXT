@@ -71,6 +71,7 @@ Q36: Challenge! To change a 24-hour clock to a 12-hour clock:
 - if the internet hours value is 0 (midnight) or 12 (noon), display it as 12
 - for hours 13-23, we substract 12 to convert it to PM hours
 - minutes stay the same (0-59).
+
 Q37: Two ways to make a 12-hour clock. 
 - Option 1: Store hours internally from 1 to 12. The hour number display rolls over from 12 back to 1. Simpler to display, but harder if you need 24-hour internal calculations.
 
