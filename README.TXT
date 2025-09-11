@@ -39,5 +39,39 @@ Q28: // Calls to rpint method
     // Calls to getStatus method
     p1.getstatus(5);
     p1.getstatus(10);
-This demonstrates two calls fro each method.
-Q29
+This demonstrates two calls for each method public void print(String filename, boolean doubleSided)
+public int getStatus(int delay).
+
+Q29: The types of objects created by the Picture constructor are 
+     - Square objects
+     - Triangle objects
+     - Circle objects
+     - Person objects
+These help to create different parts of the picture, such as the roof, walls, sun, and window.
+Q30:In the draw method of Picture, the Triangle object called roof has external methods cause like;
+                   - moveHorizontal(int distance)
+                   - moveVertical(int distance)
+                   - changSize(int newHeight, int newWidth)
+                   - makeVisible()
+                   - makeInvisible()
+Q31: There arent any internal methods however it contains external methods such as:   wall.moveVertical(20); wall.changeSize(120); wall.makeVisible();
+- window.changeColor("black"); window.moveHorizontal(-120); window.moveVertical(40); window.changeSize(40); window.makeVisible();
+- roof.changeSize(60, 180); roof.moveHorizontal(20); roof.moveVertical(-60); roof.makeVisible();
+- sun.changeColor("yellow"); sun.moveHorizontal(100); sun.moveVertical(-40); sun.changeSize(80); sun.makeVisible();
+
+Q32: The expression (8 % 3) gives 2. This is because 8 is divided by 3 is 2 remainder 2.
+Q33: When using the modulo operator (%) with negative numbers:
+- (-8 % 3) gives -2
+- (8 % -3) gives 2
+- (-8 % -3) gives -2
+Sign of the result matches the sign of the dividend (first number).
+Q34: The possible results are: 0, 1, 2, 3, 4
+Q35: The possible results are: 0, 1, 2, 3, 4 ...., m-1 (remainder always from 0 to one less than the divisor,m.)
+Q36: Challenge! To change a 24-hour clock to a 12-hour clock:
+- if the internet hours value is 0 (midnight) or 12 (noon), display it as 12
+- for hours 13-23, we substract 12 to convert it to PM hours
+- minutes stay the same (0-59).
+Q37: Two ways to make a 12-hour clock. 
+- Option 1: Store hours internally from 1 to 12. The hour number display rolls over from 12 back to 1. Simpler to display, but harder if you need 24-hour internal calculations.
+
+- Option 2: Keep hours internally as 24-hour values, but change the display. Internally, I will stay 0 to 23. Display converts from 0 to 12 AM., 13 to 1 PM, and 23 to 11 PM. Easier for calculations and updating time. Better option for most programs because internal logic remains consistent.
