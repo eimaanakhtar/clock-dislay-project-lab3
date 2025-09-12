@@ -24,9 +24,19 @@ public class ClockDisplay
      */
     public ClockDisplay()
     {
+        long millis = System.currentTimeMillis();
+        long seconds = millis / 1000;
+// use a ‘cast’ to convert long integers to int.
+        int currentMinutes = (int) (seconds / 60 % 60);
+        int currentHours = (int) (seconds / (60 * 60) % 24);
+        
         hours = new NumberDisplay(24);
         minutes = new NumberDisplay(60);
-        updateDisplay();
+        
+        hours.setValue(currentHours);
+        minutes.setValue(currentMinutes);
+        
+        updateDisplay(); // make sure the display shows the current time
     }
 
     /**
